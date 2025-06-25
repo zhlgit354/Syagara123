@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Syagara | Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!--CSS-->
+    <style>
+      .navbar-nav {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+      }
+      .btn {
+        border-radius: 30px;
+        padding: 12px 20px;
+      }
+      #hero .bg-hero {
+        background-image: url(/asset/img-banner1.png);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        border-radius: 50px;
+      }
+
+      #produk .card {
+        margin-top: 20px;
+        border: 1px solid black;
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card-img-top {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      #about .bg-about {
+        background-color: aquamarine;
+        height: 350px;
+        border-radius: 50px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      #cta .bg-cta {
+        background-image: url(asset/img-cta.png);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        border-radius: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="asset/logo.png" alt="" width="135px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            <a class="nav-link" href="#">Produk</a>
+            <div class="vr ms-3 me-3"></div>
+            <a class="btn btn-outline-success me-3" href="#">Masuk</a>
+            <a class="btn btn-success" href="#">Daftar</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--END NAVBAR-->
+    <!--HERO-->
+    <section id="hero">
+      <div class="container">
+        <div class="bg-hero d-flex align-items-center ps-5">
+          <div class="row">
+            <div class="col">
+              <h1 class="text-success">
+                Natural dan Segar <br />
+                untuk kesehatan
+              </h1>
+              <button class="btn btn-outline-success">Belanja Sekarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END HERO-->
+    <!--Produk-->
+    <section id="produk">
+      <div class="container text-center mt-5">
+        <h3 class="text-success">Pilihan Buah & Sayur Segar</h3>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="/asset/pisang.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Pisang Cavnedish</h5>
+                <p class="card-text">Rp. 15.000,-</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="/asset/jeruk.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Jeruk</h5>
+                <p class="card-text">Rp. 15.000,-</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="/asset/apel.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Apel</h5>
+                <p class="card-text">Rp. 15.000,-</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="/asset/melon.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Semangka</h5>
+                <p class="card-text">Rp. 15.000,-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Produk-->
+    <!--About-->
+    <section id="about">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="bg-about">
+              <div class="tb">
+                <h2 class="text-success">
+                  Produk yang dirawat & dipilih dengan kualitas terbaik
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <img src="asset/img-banner3.png" alt="" width="100%" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END About-->
+    <!-- CTA -->
+    <section id="cta">
+      <div class="container mt-5">
+        <div
+          class="bg-cta d-flex align-items-center text-center justify-content-center"
+        >
+          <div class="row">
+            <div class="col">
+              <img src="asset/logo-putih.png" alt="" />
+              <h1 class="text-light mt-3 mb-3">
+                Ayo Belanja sekarang dan mulai nikmati <br />
+                kesegaran buah & sayur yang sehat!
+              </h1>
+              <button class="btn btn-outline-light">Belanja Sekarang!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CTA -->
+    <!-- Footer -->
+    <footer>
+      <p class="text-center mt-5">Copyright &copy 2025</p>
+    </footer>
+    <!-- END footer -->
+    <!--BOOTSTRAP JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
